@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expansão de Tópicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .topic {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-header {
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+
+        .topic-header:hover {
+            background-color: #e9e9e9;
+        }
+
+        .topic-content {
+            padding: 15px;
+            display: none; /* Inicia oculto */
+        }
+
+        .topic img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .topic p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="topic">
+        <div class="topic-header">Tópico 1</div>
+        <div class="topic-content">
+            <img src="imagem1.jpg" alt="Imagem 1">
+            <p>Texto sobre o Tópico 1</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <div class="topic-header">Tópico 2</div>
+        <div class="topic-content">
+            <img src="imagem2.jpg" alt="Imagem 2">
+            <p>Texto sobre o Tópico 2</p>
+        </div>
+    </div>
+
+    <!-- Adicione mais tópicos conforme necessário -->
+
+    <script>
+        // Adiciona evento de clique aos cabeçalhos dos tópicos para alternar a visibilidade do conteúdo
+        var topics = document.querySelectorAll('.topic');
+        topics.forEach(function(topic) {
+            var header = topic.querySelector('.topic-header');
+            var content = topic.querySelector('.topic-content');
+            header.addEventListener('click', function() {
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

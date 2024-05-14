@@ -1,0 +1,187 @@
+body {
+margin: 0; /* Remove a margem padrão do corpo */
+background-color: #f0f0f0; /* Define a cor de fundo */
+background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o corpo */
+background-position: center; /* Centraliza a imagem de fundo */
+font-family: Arial, sans-serif; /* Define uma fonte padrão */
+color: #333; /* Define a cor do texto */ 
+}
+
+/* Estilos para os diferentes layouts */
+.conteudo {
+    display: none;
+}
+
+.links-container {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Distribui os links uniformemente */
+    padding: 0 10px; /* Adiciona um espaço nas laterais do container */
+    background-color: gray; /* Define uma cor de fundo para a barra de links */
+}
+
+
+.links-container a {
+    color: black; /* Define a cor do texto dos links */
+}
+
+.links-container a:hover {
+    background-color: #555; /* Altera a cor de fundo dos links quando passa o mouse sobre eles */
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Inverte a direção do fluxo */
+    max-width: auto; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    background-color: lightgray; /* Define uma cor de fundo para o conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.container_topic {
+    display: flex;
+    flex-direction: column; /* Inverte a direção do fluxo */
+    width: 1800px; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    background-color: lightgray; /* Define uma cor de fundo para o conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+form {
+    width: 90%;
+    max-width: auto; /* Define uma largura máxima para o formulário */
+    background-color: lightgray; /* Define uma cor de fundo para o conteúdo */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Adiciona regras de estilo de mídia para ajustar o layout em tamanhos de tela menores */
+@media (max-width: 768px) {
+    form {
+        width: 100%; /* Define a largura do formulário como 100% em telas menores */
+    }
+}
+
+.topic {
+    background-color: rgba(139, 207, 139, 0.788);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic-header {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(114, 224, 114, 0.788);
+}
+
+.topic-header:hover {
+    background-color: rgba(4, 241, 4, 0.788);
+}
+
+.topic-content {
+    padding: 15px;
+    display: none; /* Inicia oculto */
+}
+
+.topic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Div para a imagem (opcional) */
+.image-div {
+    width: 20%; /* Define a largura da div da imagem */
+    background-color: lightyellow; /* Define uma cor de fundo para as seções de imagem */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+.image-div img {
+    max-width: 100%; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem na div */
+}
+
+.image-div p{
+    margin: 0%;
+}
+/* Div para o texto */
+.text-div {
+    flex-grow: 1; /* A div se expande para preencher o espaço restante */
+    text-align: justify; /* Alinha o texto justificado */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.text-div p {
+    margin: 0%;
+}
+/* Estilo para os links */
+a {
+    padding: 15px; /* Adiciona um preenchimento interno */
+    text-decoration: none; /* Remove a decoração de sublinhado */
+    color: black; /* Cor do texto */
+    background-color: gray; /* Cor de fundo */
+    border-radius: 5px; /* Borda arredondada */
+    border: 2px solid transparent;
+}
+        /* Estilo para os links quando passa o mouse sobre eles */
+    a:hover {
+    background-color: gray; /* Altera a cor de fundo quando o mouse passa sobre o link */
+    border-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    font-size: large;
+}
